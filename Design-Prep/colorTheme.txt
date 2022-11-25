@@ -1,0 +1,20 @@
+Color Theme 
+
+- white
+- font_dark
+- font_light
+- font_base
+- font_link
+- contrast
+- footer
+- footer_base
+- success
+- danger
+- primary
+- primary_tint
+
+--green = div
+--lightblue = section/header
+--orange = flexbox
+--purple = flex-items
+
