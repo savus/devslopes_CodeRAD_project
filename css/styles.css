@@ -234,6 +234,16 @@ span.bg-color-6
 .block-text.pricing-header{ 
    text-align:center;
    padding-right:0;
+   margin:var(--size-100) 0;
+}
+
+.pricing-table
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(215px,1fr));
+   gap:var(--size-18);
+   margin:auto;
+   align-items:flex-start;
 }
 
 .price-card 
@@ -241,6 +251,22 @@ span.bg-color-6
    background-color:var(--white);
    border-radius:8px;
    padding:var(--size-16);
+}
+
+.price-card .checked 
+{
+   color:var(--success);
+}
+
+.price-card .times
+{
+   color:var(--danger);
+}
+
+.price-card.featured
+{
+   box-shadow:0 10px 20px rgba(82,179,255,0.2);
+   margin-top:-1rem;
 }
 
 .price-card h3
@@ -275,4 +301,10 @@ span.bg-color-6
 .price-card .icon 
 {
    float:right;
+   font-weight:400;
+}
+
+.plan-btn-wrapper
+{
+   text-align:center;
 }
