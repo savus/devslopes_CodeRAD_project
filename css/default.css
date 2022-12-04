@@ -114,15 +114,28 @@ img
     transition: ease-in-out 0.3s;
     color:var(--white);
     padding:0.4375rem 1.5625rem
-  }
+   }
 
-@media all and (min-width:1200px)
-{
-   .container { max-width:1140px; }
-}
+   @media all and (min-width:768px)
+   {
+      .pricing-table,
+      .testimonial-grid,
+      .footer-bottom-wrapper { max-width:720px; }
+   }
 
-@media all and (min-width:768px)
-{
-   .pricing-table,
-   .testimonial-grid { max-width:720px; }
-}
+   @media all and (min-width:992px)
+   {
+      footer .container
+      {
+         max-width:960px;
+      }
+   }
+   
+   @media all and (min-width:1200px)
+   {
+      .container { max-width:1140px; }
+   }
+   
+   
+   
+   
