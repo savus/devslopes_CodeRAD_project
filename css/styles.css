@@ -17,7 +17,8 @@
 }
 
 .navbar.sticky .navbar-toggler span,
-.navbar.sticky .navbar-brand 
+.navbar.sticky .navbar-brand,
+.navbar.sticky a
 {
    color: var(--font-color-dark);
 }
@@ -109,7 +110,7 @@
    color:var(--white);
 }
 
-.why-me 
+.why-me-wrapper
 {
    padding:var(--size-150) 0;
 }
@@ -447,6 +448,7 @@ footer .column-grid
 footer .footer-col
 {
    justify-self:center;
+   max-width:250px;
 }
 
 .footer-top h5
