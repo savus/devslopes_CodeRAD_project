@@ -32,7 +32,8 @@
    </head>
    <body>
       <div id="pageTop"></div>
-      <nav class="navbar nav">
+
+      <nav class="navbar nav" id="topNav">
          <div class="container">
             <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
                <span>&#9776</span>
@@ -443,13 +444,25 @@
          </section>
 
       </footer>
-<<<<<<< Updated upstream
-
       <a id="scrollUp" href="#pageTop">
          <i class="fa-solid fa-arrow-up"></i>
       </a>
-=======
+
       <script>
+         const nav = document.getElementById("topNav");
+
+         window.onscroll = function () 
+         {
+            if(window.pageYOffset > 100)
+            {
+               nav.classList.add("sticky");
+            }
+            else 
+            {
+               nav.classList.remove("sticky");
+            }
+         }
+
          const navButton = document.querySelector("button[aria-expanded]");
 
          function toggleNav({ target })
@@ -460,6 +473,5 @@
 
          navButton.addEventListener('click',toggleNav);
       </script>
->>>>>>> Stashed changes
    </body>
 </html>
