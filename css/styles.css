@@ -9,6 +9,22 @@
    padding:1rem;
 }
 
+.navbar-toggler
+{
+   position:absolute;
+   right:var(--size-10);
+   top:var(--size-20);
+   background-color:transparent;
+   border:1px solid transparent;
+}
+
+.navbar-toggler span 
+{
+   color:var(--white);
+   font-size:var(--size-20);
+   cursor:pointer;
+}
+
 [aria-controls="navbarDropdown"]
 {
    display:none;
@@ -48,7 +64,12 @@
    padding: 4.6875rem 0;
 }
 
-.bg-header { background-image:url("../CodeRad-assets/bg-header-1.jpg"); }
+.bg-header 
+{ 
+   background-image:url("../CodeRad-assets/bg-header-1.jpg"); 
+   padding:var(--size-150) 0;
+}
+
 .video-demo { background-image:url("../CodeRad-assets/bg-demo.jpg"); }
 
 .bg-header::before
@@ -101,9 +122,10 @@
    flex:1;
 }
 
-.block-text
+.why-me-wrapper .block-text
 {
-   padding-right:var(--size-50);
+   padding-right:var(--size-100);
+   max-width:35rem;
 }
 
 .block-text span
@@ -201,6 +223,7 @@ span.bg-color-6
 .video-demo .block-text p
 {
    color:var(--white);
+   margin:var(--size-50) 0;
 }
 
 .video-box
@@ -251,7 +274,7 @@ span.bg-color-6
 {
    background-color:var(--white);
    border-radius:8px;
-   padding:var(--size-16);
+   padding:var(--size-40) var(--size-16);
 }
 
 .price-card .checked 
@@ -308,6 +331,11 @@ span.bg-color-6
 .plan-btn-wrapper
 {
    text-align:center;
+}
+
+.plan-btn-wrapper a 
+{
+   width:100%;
 }
 
 .testimonial-grid
@@ -412,6 +440,7 @@ footer .footer-col
    color:var(--white);
    font-weight:500;
    margin-bottom:var(--size-16);
+   font-size:var(--size-16);
 }
 
 .contact-info li 
@@ -435,6 +464,11 @@ footer .footer-col
 {
    color:var(--white);
    font-size:var(--size-16);
+}
+
+.services-wrapper h5 
+{
+   margin-bottom:initial;
 }
 
 .services-wrapper p 
@@ -463,6 +497,7 @@ footer .footer-col
 {
    color:var(--white);
    font-weight:600;
+   font-size:0.75rem;
 }
 
 .post-inner span 

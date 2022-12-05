@@ -226,10 +226,10 @@
                      <span class="title">Speedy Tool Building </span>
                      <span class="icon times">&#10761;</span>
                   </li>
-                  <div class="plan-btn-wrapper">
-                     <a href="#" class="btn btn-primary">Learn More</a>
-                  </div>
                </ul>
+               <div class="plan-btn-wrapper">
+                  <a href="#" class="btn btn-primary">Get Started</a>
+               </div>
             </div>
 
             <div class="price-card">
@@ -373,21 +373,18 @@
                      <h5>Mobile Apps</h5>
                      <p>
                         Lorem ipsum is placeholder text commonly used in the graphic, print.
-                        And publishing industries for previewing layouts and visual mockups. 
                      </p>
                   </div>
                   <div class="services-wrapper">
                      <h5>Brand Identity</h5>
                      <p>
                         Lorem ipsum is placeholder text commonly used in the graphic, print.
-                        And publishing industries for previewing layouts and visual mockups. 
                      </p>
                   </div>
                   <div class="services-wrapper">
                      <h5>Social Media</h5>
                      <p>
                         Lorem ipsum is placeholder text commonly used in the graphic, print.
-                        And publishing industries for previewing layouts and visual mockups. 
                      </p>
                   </div>
                </div>
@@ -446,9 +443,23 @@
          </section>
 
       </footer>
+<<<<<<< Updated upstream
 
       <a id="scrollUp" href="#pageTop">
          <i class="fa-solid fa-arrow-up"></i>
       </a>
+=======
+      <script>
+         const navButton = document.querySelector("button[aria-expanded]");
+
+         function toggleNav({ target })
+         {
+            const expanded = target.getAttribute("aria-expanded") === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+         }
+
+         navButton.addEventListener('click',toggleNav);
+      </script>
+>>>>>>> Stashed changes
    </body>
 </html>
